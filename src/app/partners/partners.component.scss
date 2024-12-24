@@ -1,0 +1,17 @@
+.partners {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      img {
+        max-width: 120px;
+        height: auto;
+      }
+    }
+  }
