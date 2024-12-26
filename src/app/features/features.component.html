@@ -4,38 +4,46 @@
     <div class="text-container">
       <img src="img2.jpg" class="img1" width="432" height="432" />
       <div class="stats">
-        <p><strong>56,5470+</strong></p>
+        <p class="p1"><strong>56,5470+</strong></p>
         <p>People are learning</p>
         <div class="avatars">
-          <img src="f1.jpg" />
-          <img src="f1.jpg" />
-          <img src="f1.jpg" />
-          <img src="f1.jpg" />
+          <img *ngFor="let i of [1,2,3,4]" src="f{{i}}.jpg" alt="img3" />
+          <div class="more">3+</div>
         </div>
+       
       </div>
     </div>
 
 
 <div class="info-feat">
-    <h2>How our online public school works</h2>
+    <h2>How our online</h2> 
+    <h2>public school works</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <fa-icon [icon]="faLaptop"></fa-icon>
+        <div class="icon-container">
+          <fa-icon [icon]="faLaptop"></fa-icon>
+        </div>
         <h3>Virtual Learning</h3>
         <p>The curriculum with the standard school supplies and voluntary field trips</p>
       </div>
       <div class="feature-card">
-        <fa-icon [icon]="faBook"></fa-icon>
+        <div class="icon-container">
+          <fa-icon [icon]="faBook"></fa-icon>
+        </div>
         <h3>Meaningful Education</h3>
         <p>Students of our Connections Academy brands have additional contributions</p>
       </div>
       <div class="feature-card">
-        <fa-icon [icon]="faChalkboardTeacher"></fa-icon>
+        <div class="icon-container">
+          <fa-icon [icon]="faChalkboardTeacher"></fa-icon>
+        </div>
         <h3>Online Curriculum</h3>
         <p>Our curriculum includes getting help by giving them support</p>
       </div>
       <div class="feature-card">
-        <fa-icon [icon]="faUsers"></fa-icon>
+        <div class="icon-container">
+          <fa-icon [icon]="faUsers"></fa-icon>
+        </div>
         <h3>Social Interaction</h3>
         <p>Students at connections Academy collaborate on projects together</p>
       </div>

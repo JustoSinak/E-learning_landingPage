@@ -1,13 +1,21 @@
-<section class="testimonials">
-    <h2>What our students say</h2>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <p>"Love mathematics because of Besnik Academy."</p>
-        <h3>Wilson Thai</h3>
-      </div>
-      <div class="testimonial">
-        <p>"There is so much to see and do all over the world."</p>
-        <h3>Milena Belmar</h3>
+<div class="review-slider">
+  <h1>Transform your life through education</h1>
+  <div class="reviews-container">
+    <button class="arrow left" (click)="prevReview()">&#8592;</button>
+    <div class="review" *ngFor="let review of visibleReviews; let i = index" [ngClass]="{ active: i === currentIndex }">
+      <h3>{{ review.title }}</h3>
+      <p>"{{ review.description }}"</p>
+      <div class="reviewer">
+        <img [src]="review.image" alt="{{ review.name }}" />
+        <div>
+          <p>{{ review.name }}</p>
+          <p>{{ review.location }}</p>
+          <div class="stars">
+            <span *ngFor="let star of [1, 2, 3, 4, 5]">&#9733;</span>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    <button class="arrow right" (click)="nextReview()">&#8594;</button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="hero-container">
+    <div class="content-section">
+      <h1>Transform your life through education</h1>
+      <p>Ariel Hocsman launched a new career in software development by taking courses on Beeink. What will you be able to do?</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+
+    <div class="video-section">
+      <div class="main-video">
+        <div class="play-button">▶</div>
+        <img [src]="videos[selectedVideo].thumbnail" [alt]="videos[selectedVideo].title" />
+      </div>
+      
+      <div class="thumbnails">
+        <div 
+          class="thumbnail" 
+          *ngFor="let video of videos" 
+          [class.active]="video.id === selectedVideo"
+          (click)="selectVideo(video.id)"
+        >
+          <img [src]="video.thumbnail" [alt]="video.title" />
+          <span>{{ video.title }}</span>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -9,11 +9,12 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { VidlectsComponent } from './vidlects/vidlects.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, NavbarComponent, HeroComponent, FeaturesComponent,
-     PricingComponent, PartnersComponent, CoursesComponent, 
+     PricingComponent, CoursesComponent, VidlectsComponent,
      TestimonialsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

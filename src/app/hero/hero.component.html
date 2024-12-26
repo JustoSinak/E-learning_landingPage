@@ -1,17 +1,58 @@
 <section class="hero">
-    <div class="hero-content">
-      <h1>Discover best classes for the best learning</h1>
-      <p>We designed Connections Academy to give students everywhere a better online public school than they have.</p>
-      <button class="get-started">Get Started</button>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-card">
-        <span class="number">125k</span>
-        <span class="label">Students</span>
+   <div class="content">
+        <div class="hero-left">
+          <h1>Discover best classes for the best learning</h1>
+          <p>
+            We designed Connections Academy to give students all across the nation 
+            a tuition-free online public school that lets them learn.
+          </p>
+          <button class="cta-button">Get Started</button>
+          <div class="learn-more">
+            Not sure when to start? <a href="#">Learn more</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="image-wrapper">
+            <img src="assets/student.jpg" alt="Student pointing" class="student-image">
+            <div class="paper-plane">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="metrics-card">
+              <div class="increase-badge">
+                <span>Increase Audience</span>
+                <svg class="checkmark" viewBox="0 0 24 24">
+                  <path fill="#1a73e8" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <div class="circle-progress">
+                <span class="value">125K</span>
+                <span class="label">Followers</span>
+              </div>
+            </div>
+            <div class="stats-badge">
+              <div class="icon">🎓</div>
+              <div class="stats-content">
+                <div class="counting">
+                  <strong>100,000+</strong>
+                  <span>Beeink graduations</span>
+                </div>
+                <div class="rate">15.35%/yr</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="stat-card">
-        <span class="number">100,000+</span>
-        <span class="label">Enrollments</span>
+
+      <div class="partners">
+        <div class="partners-info">
+          <h2>400+</h2>
+          <p>Universities worldwide that partner with us</p>
+        </div>
+        <div class="logos">
+          <img *ngFor="let uni of universities" [src]="uni.logo" [alt]="uni.name">
+        </div>
       </div>
-    </div>
   </section>
