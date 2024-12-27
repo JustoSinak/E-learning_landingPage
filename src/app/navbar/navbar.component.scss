@@ -57,7 +57,19 @@
         margin-top: 10px;
       }
     }
+    @media (max-width: 576px) { 
+      .navbar { 
+        padding: 1rem; 
 
+        nav a { 
+          font-size: 0.8rem; 
+        } 
+        .sign-in { 
+          padding: 0.5rem 1rem; 
+          font-size: 0.9rem; 
+        }
+      }
+    }
 
     
   }

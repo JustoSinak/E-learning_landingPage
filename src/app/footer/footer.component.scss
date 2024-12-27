@@ -95,6 +95,25 @@
       }
     }
 
-    
+    @media (max-width: 576px) { 
+      .footer-container { 
+        gap: 0.5rem; 
+        .footer-brand, .footer-links, .footer-app { 
+          flex: 1 1 100%; 
+        } 
+        .footer-links ul li { 
+          margin: 0.3rem 0; 
+        } 
+        .footer-app .app-links { 
+          gap: 0.3rem; 
+          img { 
+            width: 100px; 
+          } 
+        } 
+      } 
+      .footer-bottom {
+      font-size: 0.75rem; 
+    }
+  }
   }
   
