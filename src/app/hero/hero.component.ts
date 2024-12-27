@@ -15,9 +15,9 @@ export class HeroComponent {
   faMedal = faMedal;
 
   universities = [
-    { name: 'McGill University', logo: 'assets/mcgill-logo.png' },
-    { name: 'Amity University', logo: 'assets/amity-logo.png' },
-    { name: 'University of Houston', logo: 'assets/houston-logo.png' },
-    { name: 'University of Plymouth', logo: 'assets/plymouth-logo.png' }
+    { name: 'McGill University', logo: 'public.icon1.png' },
+    { name: 'Amity University', logo: 'public/icon2.png' },
+    { name: 'University of Houston', logo: 'public/icon3.png' },
+    { name: 'University of Plymouth', logo: 'public/icon4.png' }
   ];
 }

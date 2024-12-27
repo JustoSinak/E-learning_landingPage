@@ -53,10 +53,10 @@
       <div class="partners">
         <div class="partners-info">
           <h2>400+</h2>
-          <p>Universities worldwide that partner with us</p>
+          <p>Universities worldwide</p> <p>that partner with us</p>
         </div>
         <div class="logos">
-          <img *ngFor="let uni of universities" [src]="uni.logo" [alt]="uni.name">
+          <img *ngFor="let i of [1,2,3,4]" src="icon{{i}}.png"  />
         </div>
       </div>
   </section>
