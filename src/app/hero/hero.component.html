@@ -25,6 +25,10 @@
             <div class="metrics-card">
               <div class="increase-badge">
                 <span>Increase Audience</span>
+
+                <!-- 
+                The Svg below help to display the checkmark
+                -->
                <svg class="checkmark" viewBox="0 0 24 24">
                   <path fill="#1a73e8" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg> 
@@ -56,6 +60,7 @@
           <p>Universities worldwide</p> <p>that partner with us</p>
         </div>
         <div class="logos">
+          <!-- Display an array of image-->
           <img *ngFor="let i of [1,2,3,4]" src="icon{{i}}.png"  />
         </div>
       </div>

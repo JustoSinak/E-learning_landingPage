@@ -1,3 +1,10 @@
+/**
+ * FooterComponent
+ * 
+ * This component represents the footer of the page, 
+ * containing brand information, links, and app download options.
+ */
+
 import { Component } from '@angular/core';
 
 @Component({

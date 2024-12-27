@@ -1,3 +1,17 @@
+/**
+ * TestimonialsComponent
+ * 
+ * This component displays students review, 
+ * including their appreciation and pictures.
+ * 
+ * Dependencies:
+ * - FontAwesomeModule for icons
+ * 
+ * Functions:
+ * -nextSlide() used to swipe to the next,
+ * -previousSlide() used to swipe to previous slide
+ */
+
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faStar,faArrowLeft,faArrowRight } from '@fortawesome/free-solid-svg-icons';

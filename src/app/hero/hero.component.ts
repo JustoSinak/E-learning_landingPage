@@ -1,3 +1,13 @@
+/**
+ * HeroComponent
+ * 
+ * This component displays the main information Elearning platform
+ * 
+ * Dependencies:
+ * - FontAwesomeModule for icons
+ * - NgFor for iterating over arrays
+ */
+
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -10,14 +20,13 @@ import { faGraduationCap,faPaperPlane, faMedal } from '@fortawesome/free-solid-s
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+
+  /**
+   * Exports different icons to be used in the html file
+  */
   faGraduationCap = faGraduationCap;
   faPaperPlane = faPaperPlane;
   faMedal = faMedal;
 
-  universities = [
-    { name: 'McGill University', logo: 'public.icon1.png' },
-    { name: 'Amity University', logo: 'public/icon2.png' },
-    { name: 'University of Houston', logo: 'public/icon3.png' },
-    { name: 'University of Plymouth', logo: 'public/icon4.png' }
-  ];
+  
 }

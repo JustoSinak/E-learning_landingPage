@@ -1,3 +1,11 @@
+/**
+ * PricingComponent
+ * 
+ * This component represents the section of offers, 
+ * containing brand information on regular,medium and premium offers.
+ */
+
+
 import { Component } from '@angular/core';
 
 @Component({

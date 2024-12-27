@@ -1,5 +1,16 @@
+/**
+ * VidlectsComponent
+ * 
+ * This component represents the section of videos lecture,
+ * 
+ * Functions:
+ * -ChangeMainVideo() used to switch from one video to the other. 
+ *
+ */
+
+
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+
 
 interface Video {
   id: number;
