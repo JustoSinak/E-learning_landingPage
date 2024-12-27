@@ -14,26 +14,29 @@
 
         <div class="hero-right">
           <div class="image-wrapper">
-            <img src="assets/student.jpg" alt="Student pointing" class="student-image">
-            <div class="paper-plane">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <fa-icon [icon]="faPaperPlane" class="paper"></fa-icon>
+           <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-width="2"/>
-              </svg>
+              </svg>--> 
+            <div class="paper-plane">
+              <!---->
+              <img src="img2.jpg" alt="Student pointing" class="student-image" stroke-width="2">
             </div>
             <div class="metrics-card">
               <div class="increase-badge">
                 <span>Increase Audience</span>
-                <svg class="checkmark" viewBox="0 0 24 24">
+               <svg class="checkmark" viewBox="0 0 24 24">
                   <path fill="#1a73e8" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                </svg>
+                </svg> 
               </div>
               <div class="circle-progress">
                 <span class="value">125K</span>
                 <span class="label">Followers</span>
               </div>
             </div>
+            
             <div class="stats-badge">
-              <div class="icon">🎓</div>
+              <div class="icon"><fa-icon [icon]="faMedal" class="medal"></fa-icon></div>
               <div class="stats-content">
                 <div class="counting">
                   <strong>100,000+</strong>
@@ -42,6 +45,7 @@
                 <div class="rate">15.35%/yr</div>
               </div>
             </div>
+            <fa-icon [icon]="faGraduationCap" class="cap"></fa-icon>
           </div>
         </div>
       </div>

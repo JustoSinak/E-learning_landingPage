@@ -1,21 +1,70 @@
-<div class="review-slider">
+
+<div class="testimonials-container">
   <h1>Transform your life through education</h1>
-  <div class="reviews-container">
-    <button class="arrow left" (click)="prevReview()">&#8592;</button>
-    <div class="review" *ngFor="let review of visibleReviews; let i = index" [ngClass]="{ active: i === currentIndex }">
-      <h3>{{ review.title }}</h3>
-      <p>"{{ review.description }}"</p>
-      <div class="reviewer">
-        <img [src]="review.image" alt="{{ review.name }}" />
+   <div class="navigation-arrows">
+      <fa-icon [icon]="faArrowLeft" (click)="previousSlide()"></fa-icon>
+      <fa-icon [icon]="faArrowRight" (click)="nextSlide()"></fa-icon>
+      
+    </div>
+  <div class="testimonial-slider">
+   
+    <div class="testimonial">
+      <p class="quote">"Love mathematics because of Besnik Academy"</p>
+      <p class="details">"The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal."</p>
+      <div class="author">
+        <div><img src="f1.jpg" /></div>
         <div>
-          <p>{{ review.name }}</p>
-          <p>{{ review.location }}</p>
-          <div class="stars">
-            <span *ngFor="let star of [1, 2, 3, 4, 5]">&#9733;</span>
+          <p class="name">Wilson Thai</p>
+          <p class="location">Ontario, Canada</p>
+          <div class="rating">
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            
           </div>
-        </div>
+      </div>
       </div>
     </div>
-    <button class="arrow right" (click)="nextReview()">&#8594;</button>
+    <div class="testimonial">
+      <p class="quote">"There is so much to see and do all over world"</p>
+      <p class="details">"The curriculum was directly targeted toward applied techniques with high profile projects – real datasets with industry partners. It helped me achieve my career transition goal."</p>
+      <div class="author">
+        <div><img src="f1.jpg" /></div>
+        <div>
+          <p class="name">Milena Belmar</p>
+          <p class="location">Argentina</p>
+          <div class="rating">
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <p class="quote">"Mathematics is my passion now"</p>
+      <p class="details">"The program was very hands-on, and I learned a lot by working on real projects."</p>
+      <div class="author">
+        <div><img src="f1.jpg" /></div>
+        <div>
+          <p class="name">Emma Johnson</p>
+          <p class="location">California, USA</p>
+          <div class="rating">
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+            <fa-icon [icon]="faStar"></fa-icon>
+          </div>
+        <div>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-arrows">
+    
   </div>
 </div>

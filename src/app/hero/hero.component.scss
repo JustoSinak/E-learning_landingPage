@@ -60,6 +60,25 @@
 
 .hero-right {
   position: relative;
+
+  .student-image{
+    width: 590px;
+    height: 450px;
+  }
+  fa-icon{
+    color: #ff7043;
+  }
+  .paper{
+    position: absolute;
+    font-size: 100px;
+  }
+
+  .cap{
+    position: absolute;
+    font-size: 80px;
+    top: 70%;
+    right: 0;
+  }
 }
 
 .metrics-card {
@@ -100,6 +119,7 @@
   }
 }
 
+
 .stats-badge {
   position: absolute;
   bottom: 2rem;
@@ -114,7 +134,11 @@
 
   .icon {
     font-size: 1.5rem;
+    .medal{
+      color: #f18016;
+    }
   }
+
 
   .stats-content {
     .counting {
