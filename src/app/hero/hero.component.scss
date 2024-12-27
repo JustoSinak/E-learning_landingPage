@@ -9,6 +9,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-bottom: 4rem;
+
 }
 
 .hero-left {
@@ -210,6 +211,44 @@
     .student-image {
       width: 100%;
       height: auto;
+    }
+  }
+  @media (max-width: 576px) { 
+    .content{
+      gap: 1rem;
+    }
+    .hero-left{
+      font-size: 2rem;
+
+      p{
+        font-size: 0.9rem;
+      }
+    }
+    .cta-button{
+      padding: 0.6rem 1rem;
+    }
+    .hero-right{
+      .student-image{
+        width: 100%;
+      }
+    }
+    .checkmark, .icon{
+      width: 20px;
+      height: 20px;
+    }
+    .partners{
+     .partners-info{
+      font-size: 2rem;
+     }
+     p{
+      font-size: 0.9rem;
+     }
+    }
+    .logos{
+      img{
+        max-height: 100px;
+        width: 120px;
+      }
     }
   }
 }
