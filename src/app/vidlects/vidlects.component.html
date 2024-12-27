@@ -1,4 +1,4 @@
-<div class="hero-container">
+<!--<div class="hero-container">
     <div class="content-section">
       <h1>Transform your life through education</h1>
       <p>Ariel Hocsman launched a new career in software development by taking courses on Beeink. What will you be able to do?</p>
@@ -24,3 +24,49 @@
       </div>
     </div>
   </div>
+-->
+<!-- app.component.html -->
+<div class="container">
+  <div class="header">
+    <h1>Transform your life</h1> <h1>through education</h1>
+    <p>Ariel Hocsman launched a new career in software development by taking courses on Besnik. What will you be able to do?</p>
+    <button>Get Started</button>
+  </div>
+  <div class="video-section">
+    <div class="main-video">
+      <video width="600" controls>
+        <source src="lect3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-thumbnails">
+      <div (click)="changeMainVideo()" class="thumbnail">
+        <video width="150" controls>
+          <!--<source [src]="video.src" type="video/mp4"> -->
+          <source src="lect1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>lecture 2</p>
+      </div>
+      <div (click)="changeMainVideo()" class="thumbnail">
+        <video width="150" controls>
+          <!--<source [src]="video.src" type="video/mp4"> -->
+          <source  src="lect2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>lecture 2</p>
+      </div>
+      <div (click)="changeMainVideo()" class="thumbnail">
+        <video width="150" controls>
+          <!--<source [src]="video.src" type="video/mp4"> -->
+          <source src="lect3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>lecture 3</p>
+      </div>
+    </div>
+    
+    
+    </div>
+</div>
+
